@@ -1,0 +1,14 @@
+#include "g4rw_material.fcl"
+#include "g4rw_physlist.fcl"
+Type: -211
+NCascades: 10000
+Range: [11., 9001.]
+NDivisions: 880
+Outfile: "/global/cfs/cdirs/dune/users/mazam/G4RW/G4Cascade/LAr_PiMinus_cascade_0_9000.root"
+Material: @local::LAr
+NPi0_Cex: true
+Thresholds: [
+  [211, 150.],
+  [-211, 150.]
+]
+Physlist: @local::Physlist_default

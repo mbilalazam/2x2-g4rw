@@ -1,0 +1,12 @@
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_00_04_33_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_00_14_34_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_00_24_35_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_00_34_36_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_00_44_37_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_00_54_38_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_01_04_39_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_01_14_40_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_01_24_41_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_01_34_42_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_01_44_44_CDT.CAF.root
+/global/cfs/cdirs/dune/www/data/2x2/sandbox/v11/caf/packet-0050017-2024_07_09_01_54_45_CDT.CAF.root

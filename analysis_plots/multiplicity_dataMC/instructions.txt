@@ -1,0 +1,52 @@
+# Step 1: Login to NERSC
+ssh mazam@perlmutter.nersc.gov
+
+# Step 2: Mount CVMFS to NERSC (This will help to copy files from DUNEGPVM to NERSC)
+shifter --image=fermilab/fnal-wn-sl7:latest --module=cvmfs -- /bin/bash
+
+# Now, you can load any software or path from DUNEGPVM to NERSC. For example, below are some commands to relevant software stack from MiniRun6.5 CAFs
+
+# Step 3: Move to your NERSC directory
+	cd <path>
+
+# Step 4: Setup UPS softwares
+	source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
+	setxkbmap us
+	setup cmake v3_22_2
+	setup gcc v9_3_0
+	setup pycurl
+	setup ifdhc
+	setup geant4 v4_11_0_p01c -q e20:debug
+	setup dk2nugenie   v01_10_01k -q debug:e20
+	setup genie_xsec   v3_04_00 -q AR2320i00000:e1000:k250
+	setup genie_phyopt v3_04_00 -q dkcharmtau
+	setup jobsub_client
+	setup eigen v3_3_5
+	setup duneanaobj v03_06_01b -q e20:prof
+	setup hdf5 v1_10_5a -q e20
+	setup fhiclcpp v4_15_03 -q debug:e20
+
+# Step 5.1: Run the analsys script
+	g++ -std=c++17 -O2 -g -Wall nominal_mc.cc -o plotter \
+	  `root-config --cflags --glibs` \
+	  -I$DUNEANAOBJ_INC \
+	  -L$DUNEANAOBJ_LIB \
+	  -lduneanaobj_StandardRecord \
+	  -lduneanaobj_StandardRecord_dict \
+	  -lduneanaobj_StandardRecordProxy
+
+	g++ -std=c++17 -O2 -g -Wall nominal_data.cc -o plotter \
+	  `root-config --cflags --glibs` \
+	  -I$DUNEANAOBJ_INC \
+	  -L$DUNEANAOBJ_LIB \
+	  -lduneanaobj_StandardRecord \
+	  -lduneanaobj_StandardRecord_dict \
+	  -lduneanaobj_StandardRecordProxy
+
+# Step 6.2: Then execute the ./plotter function by
+./plotter MiniRun6p5.txt nominal_mc.root 1
+./plotter sandbox_v11.txt nominal_data.root 1
+
+
+
+

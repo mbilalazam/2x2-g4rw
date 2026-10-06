@@ -1,0 +1,11 @@
+#include "g4rw_material.fcl"
+#include "g4rw_physlist.fcl"
+Type: 2212
+NCascades: 10000
+Range: [11.0, 3004.261364]
+NDivisions: 293
+Outfile: "/global/cfs/cdirs/dune/users/mazam/G4RW/G4Cascade/LAr_P_cascade_0_9000_part1.root"
+Material: @local::LAr
+NPi0_Cex: false
+Thresholds: []
+Physlist: @local::Physlist_default
